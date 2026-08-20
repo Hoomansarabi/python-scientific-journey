@@ -16,16 +16,16 @@ else:
 
     plt.figure(figsize=(10, 5))
 
-plt.subplot(1, 2, 1)
-plt.imshow(image_bgr)
-plt.title("Wrong Colors: BGR")
-plt.axis("off")
+    plt.subplot(1, 2, 1)
+    plt.imshow(image_bgr)
+    plt.title("Wrong Colors: BGR")
+    plt.axis("off")
 
-plt.subplot(1, 2, 2)
-plt.imshow(image_rgb)
-plt.title("Correct Colors: RGB")
-plt.axis("off")
+    plt.subplot(1, 2, 2)
+    plt.imshow(image_rgb)
+    plt.title("Correct Colors: RGB")
+    plt.axis("off")
 
-plt.tight_layout()
-plt.show()
+    plt.tight_layout()
+    plt.show()
 
