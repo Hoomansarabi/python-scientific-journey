@@ -1,34 +1,40 @@
-# 🔬 Scientific Python & Image Processing Learning Journey
+# 🔬 Scientific Python & Digital Image Processing Journey
 
-Welcome to my hands-on roadmap for mastering **Scientific Computing**, **Data Analysis**, and **Digital Image Processing** in Python from scratch.
+Welcome to this hands-on roadmap. This repository is a curated collection of step-by-step implementations, focusing on **Scientific Computing**, **Data Visualization**, and **Digital Image Processing (DIP)** from the ground up.
 
-This repository documents step-by-step practical implementations, theoretical concepts, and reproducible code exercises designed for researchers and engineers transitioning from basic Python to advanced scientific stacks.
-
----
-
-## 🎯 Objectives
-- Master vectorization and matrix manipulation using **NumPy** (without slow Python loops).
-- Build publication-ready scientific visualizations with **Matplotlib**.
-- Understand digital images as numerical matrices and implement spatial image processing algorithms from the ground up.
-- Provide a clean, well-commented template for anyone who wants to follow along and practice.
+The core philosophy of this journey is to master the "Matrix Mindset": treating everything (especially images) as numerical arrays and leveraging vectorization to build efficient, research-grade algorithms.
 
 ---
 
-## 📂 Repository Structure
+## 🎯 Learning Objectives
+- **Vectorization over Loops:** Mastering `NumPy` to eliminate slow Python for-loops in mathematical operations.
+- **Visual Analytics:** Crafting publication-ready plots and scientific figures using `Matplotlib`.
+- **DIP from Scratch:** Understanding digital images as matrices and implementing spatial transformations without relying solely on high-level black-box libraries.
+- **Reproducible Research:** Providing clean, well-commented code that follows academic and engineering best practices.
+
+---
+
+## 📂 Repository Roadmap
 
 ### 1. NumPy Foundations (`/01_numpy_basics`)
-- **Vectorized Arithmetic:** Element-wise addition, scalar scaling, and performance optimizations.
-- **Boolean Masking & Filtering:** Conditional indexing and thresholding.
-- **2D Matrices & Axes:** Multi-dimensional arrays, slicing (`matrix[row, col]`), and aggregations along dimensions (`axis=0` vs `axis=1`).
+*The engine of scientific computing.*
+- **Vectorized Arithmetic:** Element-wise operations and scalar broadcasting.
+- **Boolean Masking:** Conditional indexing and intensity thresholding.
+- **Multidimensional Analysis:** Understanding `axes` (0 vs 1), slicing, and matrix reshaping.
+- **Key Files:** `01_arithmetic.py`, `02_masking.py`, `03_matrices_and_axes.py`.
 
 ### 2. Scientific Visualization (`/02_matplotlib_visualization`)
-- **Continuous Functions:** Sampling domains with `np.linspace` and rendering $y = x^2$.
-- **Trigonometric Comparisons:** Multi-line plotting for $\sin(x)$ and $\cos(x)$ with customized styles, legends, and LaTeX labels.
+*Communicating data through logic and aesthetics.*
+- **Function Sampling:** Generating continuous domains with `np.linspace`.
+- **Trigonometric Modeling:** Visualizing $\sin(x)$ and $\cos(x)$ with customized styles, LaTeX labels, and legends.
+- **Key Files:** `01_trigonometric_plots.py`.
 
-### 3. Digital Image Processing Fundamentals (`/03_image_processing_fundamentals`)
-- **Synthetic Gradients:** Constructing grayscale intensity gradients from scratch.
-- **Spatial Matrix Slicing:** Generating geometric primitives (rectangles/masks) in 2D arrays.
-- **Point Operations:** Inverting image intensity (Negative Transformation: $I_{neg} = 255 - I$).
+### 3. Image Processing Fundamentals (`/03_image_processing_fundamentals`)
+*Bridging the gap between Linear Algebra and Computer Vision.*
+- **Synthetic Image Generation:** Creating grayscale gradients and geometric primitives using NumPy.
+- **Point Operations:** Implementing the **Negative Transformation** ($I_{neg} = 255 - I$) and intensity scaling.
+- **Spatial Slicing:** Manually constructing masks and shapes within 2D/3D arrays.
+- **Key Files:** `01_shapes_and_negative.py`.
 
 ---
 
